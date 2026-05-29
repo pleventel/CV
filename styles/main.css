@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Color palette*/
+:root {
+    --primary: #14213D;
+    --primary-support: #21B1FF;
+    --accent: #FCA311;
+    --accent2: #00635D;
+    --title: #1B699E;
+    --text: #000000;
+    --background: #FFFFFF;
+    --side: #E5E5E5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--side);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*Header*/
+header {
+    background: var(--primary);
+    color: var(--side);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav a {
+    max-width: 1000px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--side);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
+
+/*Content*/
+main {
+    max-width: 1000px;
+    min-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    background-color: var(--background);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    flex: 1;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--title);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*Content blocks*/
+.block {
+    border: 2px solid var(--accent);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.block h2 {
+    margin-bottom: 0rem;
+    color: var(--accent);
+}
+
+.block h3 {
+    margin-bottom: 0rem;
+    color: var(--accent2);
+}
+
+.block p {
+    margin: 0.2rem 0;
+}
+
+.block ul {
+    padding: 0rem 1.5rem;   
+}
+
+p.department {
+    font-style: italic;
+}
+
+
+
+/*Footer*/
+footer{
+    background:var(--primary);
+    color: var(--side);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+}
