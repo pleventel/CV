@@ -1,0 +1,75 @@
+:root{
+    /*Brand colors, named after the platform they belong to*/
+    --linkedin: #0A66C2;
+    --github: #181717;
+    --email: #D93025;
+    --phone: #25A969;
+    --website: #6C4FDE;
+    --x: #000000;
+}
+
+
+/*Contact blocks*/
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+ 
+.contact-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: var(--background);
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+ 
+.contact-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+ 
+.contact-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+}
+ 
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--background);
+}
+ 
+.contact-info h2 {
+    color: var(--background);
+    font-size: 1.1rem;
+    margin-bottom: 0.15rem;
+}
+ 
+.contact-info p {
+    margin: 0;
+    color: var(--background);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    word-break: break-all;
+}
+ 
+.contact-block.linkedin { background: var(--linkedin); }
+.contact-block.github   { background: var(--github); }
+.contact-block.email    { background: var(--email); }
+.contact-block.phone    { background: var(--phone); }
+.contact-block.website  { background: var(--website); }
+.contact-block.x        { background: var(--x); }
