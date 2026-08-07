@@ -1,0 +1,89 @@
+
+/*Skill tags*/
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0.6rem 0 1.2rem 0;
+}
+ 
+.tag {
+    background: var(--primary);
+    color: var(--side);
+    border-radius: 20px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+ 
+.tag-list:last-of-type {
+    margin-bottom: 0;
+}
+ 
+ 
+ 
+/*Languages*/
+.language-list {
+    list-style: none;
+    padding: 0 !important;
+}
+ 
+.language-list li {
+    margin: 0.8rem 0;
+}
+ 
+.language-name {
+    font-weight: 600;
+    color: var(--title);
+}
+ 
+.language-level {
+    float: right;
+    color: var(--accent2);
+    font-style: italic;
+}
+ 
+.level-bar {
+    clear: both;
+    background: var(--side);
+    border-radius: 8px;
+    height: 10px;
+    margin-top: 0.4rem;
+    overflow: hidden;
+}
+ 
+.level-fill {
+    background: var(--primary-support);
+    height: 100%;
+    border-radius: 8px;
+}
+ 
+ 
+ 
+/*Hobbies*/
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.6rem;
+}
+ 
+.hobby-item {
+    background: var(--side);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    flex: 1 1 120px;
+}
+ 
+.hobby-icon {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+ 
+.hobby-item p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--text);
+}
