@@ -1,0 +1,94 @@
+/*Previous roles (collapsible list inside a block)*/
+.previous-roles {
+    margin-top: 1rem;
+}
+
+.previous-roles summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    list-style: none;
+    background: var(--primary);
+    color: var(--side);
+    border-radius: 20px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    user-select: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.previous-roles summary::-webkit-details-marker {
+    display: none;
+}
+
+.previous-roles summary:hover {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.previous-roles summary:focus-visible {
+    outline: 2px solid var(--primary-support);
+    outline-offset: 2px;
+}
+
+/*Chevron*/
+.previous-roles summary::after {
+    content: "";
+    width: 0.45rem;
+    height: 0.45rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+.previous-roles[open] summary::after {
+    transform: translateY(1px) rotate(-135deg);
+}
+
+/*Role list*/
+.role-list {
+    margin-top: 0.8rem;
+}
+
+.previous-roles[open] .role-list {
+    animation: roles-reveal 0.25s ease;
+}
+
+.role {
+    border-left: 3px solid var(--accent);
+    padding: 0.2rem 0 0.2rem 1rem;
+    margin: 0.9rem 0 0 0.4rem;
+}
+
+.role:first-child {
+    margin-top: 0;
+}
+
+.role h4 {
+    color: var(--title);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+@keyframes roles-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .previous-roles[open] .role-list {
+        animation: none;
+    }
+    .previous-roles summary::after {
+        transition: none;
+    }
+}
