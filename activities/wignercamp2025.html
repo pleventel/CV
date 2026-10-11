@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wigner Summer Camp 2025</title>
+    <link rel="stylesheet" href="./../styles/main.css">
+    <link rel="stylesheet" href="../styles/activity_styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../education.html">Education</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../activity.html">Activites</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+        <h1>Wigner Summer Camp 2025</h1>
+
+        <div class="org-logo">
+            <img src="./../images/wigner_logo.png" alt="Wigner Research Centre logo">
+        </div>
+
+        <div class="activity">
+            <p class="department">The 6th annual Wigner Summer Camp for High Schoolers was organised between 7-11 July, giving opportunity to high school students to get to know a researcher's life and work by participating in a real research project at the institute.</p>
+            <p>The 13 participating students were selected based on recommendations from their physics teachers. Half of the students were selected from the Budapest area,  and half from other cities. Students in pairs or in a group of three got assigned a mentor from the institute's part and with their leadership got to know what the researchers do every day. At the end of the week the students presented their results at a final seminar where the other students, mentors, and the director of the institute could watch the presentations. My personal responsibilities were in connection with the <i>Data and Compute Intensive Sciences Group</i>, where we worked on time series data analysis.</p>
+            <p>We began with the mathematical foundations needed for our work, including linear algebra, linear recursions, and the TSC (time series classification), accompanied by exercises. Then, we moved on to explaining our method, the ALT, which is for time series classification. After that we did actual research work on anomaly detection, involving reviewing relevant scientific literature and exploring anomaly databases. Next to that, we  also tested anomaly detection in previously used TSC-datasets from <a href="https://timeseriesclassification.com/dataset.php">timeseriesclassification.com</a> and generated syntetic databases.</p>
+            <p>Finally, the students presented their weekly work at the final seminar. Our main observation was that even though on a normal time-series dataset (for example on <a href="https://timeseriesclassification.com/description.php?Dataset=BasicMotions">BasicMotions</a>) the <code>ALTx</code>-transformed data can mostly be seperated into the respective categories, on a syntetic database we were not able to idenfity one general analysis, as just by changing the hyperparameters, we got to different trends.</p>
+            <figure class="activity-figure">
+                <img
+                    src="./../images/wignercamp2025/basic_motion_plot.png"
+                    alt="basicmotions-with-altx"
+                    style="min-width: 70%; width: 700px;"
+                >
+                <figcaption><b>Demonstration:</b> the performance of <code>ALTx</code> on BasicMotions.<br>Source: <a href="https://github.com/intensivedatacomp/WignerCamp2025">WignerCamp2025, GitHub</a>.</figcaption>
+            </figure>
+
+            <div class="activity-image-grid">
+                <img
+                    src="./../images/wignercamp2025/testing-databases.jpg"
+                    alt="work-in-progress-datacomp"
+                >
+
+                <img
+                    src="./../images/wignercamp2025/group-photo-observatory.jpg"
+                    alt="group-photo-obeservatory"
+                >
+            </div>
+
+        <p>Our training materials used in the camp are available on <a href="https://github.com/intensivedatacomp/WignerCamp2025">GitHub</a>.</p>
+        <p><i>ALT</i> refers to the data transformation method introduced in a recently published article, <a href="https://doi.org/10.1038/s41598-025-25667-0">"Adaptive law-based feature representation for time series classification" (Scientific Reports, 2025)</a>.</p>
+        <p><i><code>ALTx</code></i> refers to the Python package implementation of ALT, introduced in a recently published article, <a href="https://doi.org/10.1088/2632-2153/ae3e4f">"<code>altx</code>: a python package for adaptive law-based transformation in time series classification" (Machine Learning: Science and Technology, 2026)</a>.</p>
+        </div>
+
+        <p style="padding-top: 1rem;"><u>Participants:</u> Antal Jakovác, PhD<sup>1</sup> (PI); Éva Mária Oláh, PhD<sup>1, 2</sup> (PM); Hajnalka Ollé<sup>1</sup> (PM); Balázs Paszkál Halmos<sup>1, 3</sup> (Co-I); Balázs Hajós<sup>1, 4</sup> (Co-I); Vince Áron Molnár<sup>1, 3</sup> (Co-I); Levente László Pocsay<sup>1, 5</sup> (Co-I).</p>
+        <ol class="affiliation">
+            <li>HUN-REN Wigner Research Centre for Physics, Data and Compute Intensive Sciences Research Group (Budapest, Hungary)</li>
+            <li>HUN-REN Wigner Research Centre for Physics, Institute for Particle- and Nuclear Physics (Budapest, Hungary)</li>
+            <li>Tampere University, Faculty of Engineering and Natural Sciences (Tampere, Finland)</li>
+            <li>Eötvös Lóránd University, Faculty of Science (Budapest, Hungary)</li>
+            <li>University of Applied Sciences Upper Austria, Faculty of Informatics, Communications and Media (Hagenberg, Austria)</li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Levente L. Pocsay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
