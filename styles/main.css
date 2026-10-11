@@ -39,6 +39,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
     width: 100%;
     padding: 1rem;
 }
@@ -110,6 +111,38 @@ p.department {
     font-style: italic;
 }
 
+
+/*Universal button*/
+a.clickbutton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--side);
+    border-radius: 20px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    user-select: none;
+    transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+a.clickbutton:hover {
+    background: var(--accent);
+    color: var(--primary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+a.clickbutton:focus-visible {
+    outline: 2px solid var(--primary-support);
+    outline-offset: 2px;
+}
 
 
 /*Footer*/
