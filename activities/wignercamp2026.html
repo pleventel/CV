@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WignerCamp 2026</title>
+    <link rel="stylesheet" href="./../styles/main.css">
+    <link rel="stylesheet" href="../styles/activity_styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../education.html">Education</a>
+        <a href="../experience.html">Experience</a>
+        <a href="../activity.html">Activites</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+        <h1>Wigner Summer Camp 2026</h1>
+
+        <div class="org-logo">
+            <img src="./../images/wigner_logo.png" alt="Wigner Research Centre logo">
+        </div>
+        <div class="activity">
+            <p class="introduction">Between 6-10 July 2026, the HUN-REN Winger Research Center for Physics organiser their 7th annual summer camp for high school students with the aim of letting 10th-12th graders become researchers for a week by joining a research group in a Physics-related field. My personal responsibilities were associated with mentoring two motivated students in their project <b>Anomaly Detection with <code>ALTx</code></b>.</p>
+            <p>Before the camp, our research group prepared several presentations and teaching materials covering the mathematical and programming foundations of the project, including basics of linear algebra, time series analysis, <code>Python</code> programming, and the use of Python libraries&mdash;<code>pandas</code>, <code>NumPy</code>, <code>matplotlib</code> and <code>pytorch</code> . ALT and <code>ALTx</code> was also introduced&mdash;a method developed by the research group for time series classification (TSC) and it's Python package.</p>
+            <p>As a mentor, I presented some of these topics along my colleagues and then guided the students with their own work, both with and without my colleagues. Our main focus was to specifically peak detection on artifical datasets. For this we used the Python package <code>artifical-dataset</code>(available on <a href="https://github.com/intensivedatacomp/artificial_dataset">GitHub</a>), (developed by the research group prior the camp) alongside Jupyter notebooks for the actual coding. Our research's focus was whether a classical Bayesian Hyperparameter Optimization works better on the original data, or on the <code>ALTx</code>-transformed data (ALT transfers the normal data points close to 0 and anomalious data close to 1 on a normalized scale, meaning it basically highlights the peaks).</p>
+            <figure class="activity-figure">
+                <img
+                    src="./../images/wignercamp2026/intro_altx_transformed.png"
+                    alt="original-data-vs-data-transformed-by-altx"
+                    style="min-width: 70%; width: 700px;"
+                >
+                <figcaption><b>Demonstation:</b> original data vs <code>ALTx</code>-transformed data.<br>Source: <a href="https://github.com/intensivedatacomp/WignerCamp2026">WignerCamp2026, Github</a>.</figcaption>
+            </figure>
+            <p>The students' results were presented at a closing seminar at the end of the camp.</p>
+
+            <div class="activity-image-grid">
+                <img
+                    src="./../images/wignercamp2026/WIP_datacomp.png"
+                    alt="work-in-progress-datacomp"
+                >
+
+                <img
+                    src="./../images/wignercamp2026/group_photo_observatory.jpg"
+                    alt="group-photo-obeservatory"
+                >
+            </div>
+
+            <p>Our training materials used in the camp are available on <a href="https://github.com/intensivedatacomp/WignerCamp2026">GitHub</a>.</p>
+            <p><i>ALT</i> refers to the data transformation method introduced in a recently published article, <a href="https://doi.org/10.1038/s41598-025-25667-0">"Adaptive law-based feature representation for time series classification" (Scientific Reports, 2025)</a>.</p>
+            <p><i><code>ALTx</code></i> refers to the Python package implementation of ALT, introduced in a recently published article, <a href="https://doi.org/10.1088/2632-2153/ae3e4f">"<code>altx</code>: a python package for adaptive law-based transformation in time series classification" (Machine Learning: Science and Technology, 2026)</a>.</p>
+        </div>
+
+        <p style="padding-top: 1rem;"><u>Participants:</u> Antal Jakovác, PhD<sup>1</sup> (PI); Éva Mária Oláh, PhD<sup>1, 2</sup> (PM); Hajnalka Ollé, PhD<sup>1</sup> (PM); Balázs Paszkál Halmos<sup>1, 3, 4</sup> (Co-I); Balázs Hajós, BSc<sup>1, 5</sup> (Co-I); Vince Áron Molnár, BSc.<sup>1, 3</sup> (Co-I); Levente László Pocsay<sup>1, 6</sup> (Co-I); Bence Hajbel<sup>1, 7</sup> (Co-I).</p>
+        <ol class="affiliation">
+            <li>HUN-REN Wigner Research Centre for Physics, Data and Compute Intensive Sciences Research Group (Budapest, Hungary)</li>
+            <li>HUN-REN Wigner Research Centre for Physics, Institute for Particle- and Nuclear Physics (Budapest, Hungary)</li>
+            <li>Tampere University, Faculty of Engineering and Natural Sciences (Tampere, Finland)</li>
+            <li>CERN SY-RF-BR, (Genf, Switzerland)</li>
+            <li>Eötvös Lóránd University, Faculty of Science (Budapest, Hungary)</li>
+            <li>University of Applied Sciences Upper Austria, Faculty of Informatics, Communications and Media (Hagenberg, Austria)</li>
+            <li>Petőfi Sándor Roman Catholic Primary School and High School (Vecsés, Hungary)</li>
+        </ol>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Levente L. Pocsay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
