@@ -28,6 +28,7 @@ p.quote {
     color: var(--primary-support);
     font-style: italic;
     font-size: larger;
+    text-align: right;
 }
 
 /*Skill tags*/
