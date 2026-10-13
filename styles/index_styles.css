@@ -14,11 +14,20 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+.tag.ss2027 {
+    background: color-mix(in srgb, var(--primary) 70%, white);
+}
  
 .tag-list:last-of-type {
     margin-bottom: 0;
 }
  
+p.ss2027 {
+    font-style: italic;
+    color: color-mix(in srgb, var(--primary) 70%, white);
+    padding-bottom: 1rem;
+}
  
  
 /*Languages*/
