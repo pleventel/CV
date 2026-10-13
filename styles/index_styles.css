@@ -1,3 +1,35 @@
+/*Introduction*/
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+div.profile-pic {
+    flex: 0 0 200px;
+}
+
+img.profile-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.intro .block {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
+p.quote {
+    color: var(--primary-support);
+    font-style: italic;
+    font-size: larger;
+}
+
 /*Skill tags*/
 .tag-list {
     display: flex;
@@ -94,4 +126,24 @@ p.ss2027 {
     margin: 0;
     font-weight: 500;
     color: var(--text);
+}
+
+
+/*Mobile mode for intro block*/
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    div.profile-pic {
+        flex: 0 0 auto;
+        width: 160px;
+    }
+
+    .intro .block {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
