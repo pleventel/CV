@@ -31,6 +31,20 @@ p.quote {
     text-align: right;
 }
 
+
+/*Download CV button*/
+.cvbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+a.clickbutton.cvbutton {
+    padding: 0.5rem 1.2rem;
+}
+
+
 /*Skill tags*/
 .tag-list {
     display: flex;
@@ -98,9 +112,8 @@ p.ss2027 {
     height: 100%;
     border-radius: 8px;
 }
- 
- 
- 
+
+
 /*Hobbies*/
 .hobby-list {
     display: flex;
