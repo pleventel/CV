@@ -89,6 +89,14 @@ ol.affiliation {
 }
 
 
+/*Back button (top-left corner of the individual activity pages)*/
+a.backbutton {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.5rem;
+}
+
+
 /* Mobile */
 @media (max-width: 600px) {
     .block {

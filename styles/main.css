@@ -145,6 +145,35 @@ a.clickbutton:focus-visible {
 }
 
 
+/*Circular icon button (back arrow, back to top)
+  Same look as the universal button, but with the colours in the other order*/
+a.clickbutton.circlebutton {
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+a.clickbutton.circlebutton:hover {
+    background: var(--primary);
+    color: var(--side);
+}
+
+a.circlebutton svg {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
 /*Footer*/
 footer{
     background:var(--primary);
