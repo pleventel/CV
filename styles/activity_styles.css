@@ -97,6 +97,7 @@ a.backbutton {
 }
 
 
+
 /* Mobile */
 @media (max-width: 600px) {
     .block {
@@ -111,5 +112,50 @@ a.backbutton {
 
     .activity-image-grid {
         grid-template-columns: 1fr;
+    }
+
+    /*Individual activity page: room for back button (left) and logo (right) above the title*/
+    main.activity-detail {
+        padding-top: 4.75rem;
+    }
+
+    a.backbutton {
+        top: 0.95rem;
+        left: 1rem;
+    }
+
+    .org-logo {
+        top: 0.75rem;
+        right: 1rem;
+    }
+
+    .org-logo img,
+    .org-logo-wide img {
+        width: auto;
+        height: 50px;
+        max-width: 60vw;
+        object-fit: contain;
+    }
+
+    /*Activities overview: cards*/
+    .block.activity-block {
+        padding: 4.5rem 1rem 1rem;
+    }
+
+    /*Images, figures, text*/
+    .activity-image-grid img {
+        height: 220px;
+    }
+
+    .activity-figure figcaption {
+        font-size: 0.8rem;
+    }
+
+    ol.affiliation {
+        padding-left: 1.25rem;
+    }
+
+    code {
+        overflow-wrap: anywhere;
     }
 }

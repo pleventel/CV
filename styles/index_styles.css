@@ -143,6 +143,7 @@ p.ss2027 {
 }
 
 
+
 /*Mobile mode for intro block*/
 @media (max-width: 700px) {
     .intro {
@@ -159,5 +160,31 @@ p.ss2027 {
     .intro .block {
         flex: 0 0 auto;
         width: 100%;
+    }
+}
+
+
+/*Mobile mode for the content blocks*/
+@media (max-width: 600px) {
+    .intro {
+        margin: 1rem 0;
+    }
+
+    .tag-list {
+        gap: 0.45rem;
+    }
+
+    .tag {
+        padding: 0.25rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .hobby-list {
+        gap: 0.7rem;
+    }
+
+    .hobby-item {
+        flex: 1 1 100px;
+        padding: 0.6rem 0.8rem;
     }
 }

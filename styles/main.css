@@ -201,6 +201,12 @@ a.clickbutton.backtotop.visible {
     transform: translateY(0);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    a.clickbutton.backtotop {
+        transition: none;
+    }
+}
+
 
 /*Footer*/
 footer{
@@ -209,4 +215,89 @@ footer{
     text-align: center;
     font-size: 0.9rem;
     padding: 0.8rem 1rem;
+}
+
+
+
+/*Mobile mode*/
+@media (max-width: 700px) {
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    /*Header: links wrap onto centred rows instead of hanging left*/
+    header {
+        padding: 0.6rem 0.75rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.1rem 0.9rem;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+
+    /*Content: use the full screen width*/
+    main {
+        width: 100%;
+        min-width: 0;
+        padding: 1.25rem 1rem;
+        border-radius: 0;
+        box-shadow: none;
+        overflow-wrap: break-word;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .block {
+        padding: 0.9rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .block h2 {
+        font-size: 1.25rem;
+    }
+
+    .block h3 {
+        font-size: 1.05rem;
+    }
+
+    .block ul {
+        padding: 0 0 0 1.25rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+
+    /*Back to top button: slightly closer to the corner*/
+    a.clickbutton.backtotop {
+        right: 1rem;
+        bottom: calc(1rem + var(--footer-overlap));
+    }
+}
+
+/*Very narrow phones*/
+@media (max-width: 380px) {
+    nav {
+        gap: 0.1rem 0.7rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
 }
