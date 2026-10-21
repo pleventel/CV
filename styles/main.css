@@ -16,6 +16,8 @@
     --text: #000000;
     --background: #FFFFFF;
     --side: #E5E5E5;
+
+    --footer-overlap: 0px; /*keeping the back-to-top button above the footer*/
 }
 
 body {
