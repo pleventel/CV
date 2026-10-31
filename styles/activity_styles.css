@@ -1,3 +1,55 @@
+:root {
+  --back-button-size: 2.75rem;
+  --activity-header-gap: 1rem;
+  --on-accent: #fff;
+}
+
+
+/*Activity header*/
+.activity-header {
+  display: grid;
+  grid-template-columns: var(--back-button-size) minmax(0, 1fr) auto;
+  grid-template-areas: "back title logo";
+  align-items: center;
+  gap: var(--activity-header-gap);
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  grid-area: back;
+  display: grid;
+  place-items: center;
+  width: var(--back-button-size);
+  height: var(--back-button-size);
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  transition: background 0.2s;
+}
+.back-button:hover,
+.back-button:focus-visible {
+  background: var(--primary);
+}
+
+.activity-title {
+  grid-area: title;
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  overflow-wrap: anywhere;
+}
+
+.activity-logo {
+  grid-area: logo;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 160px;
+  max-height: 64px;
+  object-fit: contain;
+}
+
+
 /*Activity block*/
 main{
     position: relative;
@@ -89,15 +141,6 @@ ol.affiliation {
 }
 
 
-/*Back button (top-left corner of the individual activity pages)*/
-a.backbutton {
-    position: absolute;
-    top: 1.3rem;
-    left: 1.5rem;
-}
-
-
-
 /* Mobile */
 @media (max-width: 600px) {
     .block {
@@ -106,9 +149,13 @@ a.backbutton {
     }
 
     .activity-header {
-        padding-right: 0;
-        padding-top: 5rem;
+        grid-template-columns: var(--back-button-size) minmax(0, 1fr);
+        grid-template-areas:
+            "back  logo"
+            "title title";
     }
+
+    .activity-logo {justify-self: end; max-width: 120px; max-height: 48px;}
 
     .activity-image-grid {
         grid-template-columns: 1fr;
