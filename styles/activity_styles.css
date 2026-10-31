@@ -1,52 +1,52 @@
 :root {
-  --back-button-size: 2.75rem;
-  --activity-header-gap: 1rem;
+    --back-button-size: 2.75rem;
+    --activity-header-gap: 1rem;
 }
 
 
 /*Activity header*/
 .activity-header {
-  display: grid;
-  grid-template-columns: var(--back-button-size) minmax(0, 1fr) auto;
-  grid-template-areas: "back title logo";
-  align-items: center;
-  gap: var(--activity-header-gap);
-  margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: var(--back-button-size) minmax(0, 1fr) auto;
+    grid-template-areas: "back title logo";
+    align-items: center;
+    gap: var(--activity-header-gap);
+    margin-bottom: 1.5rem;
 }
 
 .back-button {
-  grid-area: back;
-  display: grid;
-  place-items: center;
-  width: var(--back-button-size);
-  height: var(--back-button-size);
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--primary);
-  transition: background 0.2s;
+    grid-area: back;
+    display: grid;
+    place-items: center;
+    width: var(--back-button-size);
+    height: var(--back-button-size);
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--primary);
+    transition: background 0.2s;
 }
 .back-button:hover,
 .back-button:focus-visible {
-  background: var(--primary);
-  color: var(--background);
+    background: var(--primary);
+    color: var(--background);
 }
 
 .activity-title {
-  grid-area: title;
-  margin: 0;
-  text-align: center;
-  font-size: clamp(1.4rem, 4vw, 2.2rem);
-  overflow-wrap: anywhere;
+    grid-area: title;
+    margin: 0;
+    text-align: center;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    overflow-wrap: anywhere;
 }
 
 .activity-logo {
-  grid-area: logo;
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 160px;
-  max-height: 64px;
-  object-fit: contain;
+    grid-area: logo;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 64px;
+    object-fit: contain;
 }
 
 
