@@ -1,7 +1,6 @@
 :root {
   --back-button-size: 2.75rem;
   --activity-header-gap: 1rem;
-  --on-accent: #fff;
 }
 
 
@@ -23,12 +22,13 @@
   height: var(--back-button-size);
   border-radius: 50%;
   background: var(--accent);
-  color: var(--on-accent);
+  color: var(--primary);
   transition: background 0.2s;
 }
 .back-button:hover,
 .back-button:focus-visible {
   background: var(--primary);
+  color: var(--background);
 }
 
 .activity-title {
